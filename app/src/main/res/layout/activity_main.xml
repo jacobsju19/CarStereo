@@ -15,13 +15,214 @@
         android:background="#adaaaa"
         android:layout_weight="1">
 
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_weight=".1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_weight=".8" />
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/Power"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:textSize="40dp" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_weight=".5" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AM"
+                        android:id="@+id/AM"
+                        android:textColor="#ffffff"
+                        android:layout_weight="1"
+                        android:textSize="25dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FM"
+                        android:id="@+id/FM"
+                        android:textColor="#ffffff"
+                        android:layout_weight="1"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="&lt;"
+                    android:id="@+id/TunerLeft" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=">"
+                    android:id="@+id/TunerRight" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="match_parent"
+            android:layout_weight=".1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Vol."
+                    android:id="@+id/VolumeText"
+                    android:textSize="50dp" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/VolumeBar" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px"
+                android:layout_weight=".3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Station"
+                android:id="@+id/Station"
+                android:textSize="70sp"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/button1"
+                    android:textSize="40sp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/button2"
+                    android:textSize="40sp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/button3"
+                    android:textSize="40sp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/button4"
+                    android:textSize="40sp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/button5"
+                    android:textSize="40sp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:id="@+id/button6"
+                    android:textSize="40sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="match_parent"
+            android:layout_weight=".1" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#030303"
+        android:background="#adaaaa"
         android:layout_weight="1"></LinearLayout>
+
 </LinearLayout>
 
